@@ -23,8 +23,9 @@ You are tasked with developing a robust and automated application for ACEest_Fit
      > Visual Studio code 1.103.2
 
 ## Problem statement deliverables:
-#### Goal : Build a Flask web app for ACEest-Fitness
+
 ### Step 1: 
+#### Goal : Build a Flask web app for ACEest-Fitness
     > Use the code provided in ACEest-Fitness.py (in Main Branch)
     > Add a Flask structure to it and save it as app.py, example given below (in Master Branch)
     > Create a .txt file named requirements.txt
@@ -69,4 +70,12 @@ python app.py
 ```
 By default, Flask runs on http://localhost:5000. Open this URL in your browser to access the application.
 
-
+### Step 2: 
+#### Goal : Version Control Implementation
+Use the below steps to push the file to a remote Github Repository
+```python
+1 git init
+2 git add .
+3 git commit -m "Initial commit to the Fitness app"
+4 git remote add origin htttps://github.com/harshad141/fitapp.git
+5 git push -u origin master
