@@ -22,6 +22,14 @@ You are tasked with developing a robust and automated application for ACEest_Fit
      > GitHub Desktop
      > Visual Studio code 1.103.2
 
+## Important Notes:
+There are two branches in this repository
+####
+     > Main
+     > Master
+All the codes are avalible and properly uploaded to the Master Branch
+The Main Branch consists of Given Example code, along with Readme.md and ither misc files
+
 ## Problem statement deliverables:
 
 ### Step 1: 
@@ -69,6 +77,7 @@ Run the Flask Application:
 python app.py
 ```
 By default, Flask runs on http://localhost:5000. Open this URL in your browser to access the application.
+####Output:
 ![Output](flaskapp.png)
 
 ### Step 2: 
@@ -80,3 +89,107 @@ Use the below steps to push the file to a remote Github Repository
 3 git commit -m "Initial commit to the Fitness app"
 4 git remote add origin htttps://github.com/harshad141/fitapp.git
 5 git push -u origin master
+```
+
+### Step 3:
+#### Goal: Unit Testing Framework Integration
+
+To validate the functionality of the Flask application we use Pytest, use the below code with 4 test cases.
+The code is also avalible in app_test.py in Master Branch
+
+```python
+import pytest
+from jinja2 import DictLoader
+from app import app as flask_app, workouts
+@pytest.fixture(autouse=True)
+def _setup_app_and_reset_workouts():
+    # Use testing mode and inject a template
+    flask_app.config.update(TESTING=True)
+    flask_app.jinja_loader = DictLoader({"index.html": TEMPLATE})
+
+    # Clear global state before each test
+    workouts.clear()
+    yield
+    workouts.clear()
+
+@pytest.fixture()
+def client():
+    with flask_app.test_client() as c:
+        yield c
+
+def test_home_renders_empty_list(client):
+    resp = client.get("/")
+    assert resp.status_code == 200
+    html = resp.get_data(as_text=True)
+    assert '<span id="count">0</span>' in html
+    # No list items yet
+    assert 'class="workout"' not in html
+def test_add_workout_missing_workout_returns_400(client):
+    resp = client.post("/add", data={"duration": "20"})
+    assert resp.status_code == 400
+    assert b"Please enter both workout and duration." in resp.data
+
+def test_add_workout_missing_duration_returns_400(client):
+    resp = client.post("/add", data={"workout": "Cycling"})
+    assert resp.status_code == 400
+    assert b"Please enter both workout and duration." in resp.data
+
+def test_add_workout_non_numeric_duration_returns_400(client):
+    resp = client.post("/add", data={"workout": "Yoga", "duration": "abc"})
+    assert resp.status_code == 400
+    assert b"Duration must be a number." in resp.data
+```
+
+### Step 4:
+#### Goal: Automated Testing Configuration
+To run successful script, open the project directory in your local VS Code Editor and run this code
+Open terminal and use :
+```python
+pytest
+```
+Confirm all tests pass locally before CI setup.
+
+Output:
+![](pytest.png)
+
+### Step 5:
+#### Goal: Containerization with Docker
+The goal here is to package the application for a containerised deployment.
+Steps are given below:
+
+1. Create a docker file: DockerFile (Avalible in venv/Dockerfile in the main branch)
+```python
+
+FROM python:3.10-slim
+WORKDIR /app
+COPY . .
+RUN pip install -r requirements.txt
+EXPOSE 5000
+CMD ["python", "app.py"]
+```
+2. Login to Docker
+```python
+Docker login
+```
+3. Build and Run
+```python
+
+docker build -t aceest_fitness .
+docker run -p 5000:5000 aceest_fitness
+```
+4. Run the contianrised application
+   > The application will be live on http://127.0.0.1:5000
+   > If it throws an port error, try different port after editing the above script
+```python
+
+docker build -t aceest_fitness .
+docker run -p 5000:5050 aceest_fitness
+```
+   > The appliation will be live on http://127.0.0.1:5050
+
+### Step 6
+#### Goal: CI/CD Pipeline with GitHub Actions
+
+Follow the below steps
+
+
