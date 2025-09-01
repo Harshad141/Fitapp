@@ -13,11 +13,20 @@ You are tasked with developing a robust and automated application for ACEest_Fit
 5.	Containerization with Docker
 6.	CI/CD Pipeline with GitHub Actions
 
+## Tools Used:
+   > Flask ==2.3.2
+> Python == 3.13
+> Docker Engine == 28.3.3
+> Nginx == 1.29.1
+> Git == 2.51.0
+> GitHub Desktop
+> Visual Studio code == 1.103.2
 ## Problem statement deliverables:
 #### Goal : Build a Flask web app for ACEest-Fitness
 #### Step 1: 
     > Use the code provided in ACEest-Fitness.py (in Main Branch)
-    > Add a Flask structure to it and save it as app.py (in Master Branch)
+    > Add a Flask structure to it and save it as app.py, example given below (in Master Branch)
+    > 
 ```python
 from flask import Flask, render_template, request, redirect, url_for
 
