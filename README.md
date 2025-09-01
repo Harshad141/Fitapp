@@ -15,7 +15,7 @@ You are tasked with developing a robust and automated application for ACEest_Fit
 
 ## Problem statement deliverables:
 #### Goal : Build a Flask web app for ACEest-Fitness
-#### Steps: 
+#### Step 1: 
     > Use the code provided in ACEest-Fitness.py (in Main Branch)
     > Add a Flask structure to it and save it as app.py (in Master Branch)
 ```python
