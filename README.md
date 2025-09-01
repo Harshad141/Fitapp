@@ -69,7 +69,7 @@ Run the Flask Application:
 python app.py
 ```
 By default, Flask runs on http://localhost:5000. Open this URL in your browser to access the application.
-#### Output:
+![Output](flaskapp.png)
 
 ### Step 2: 
 #### Goal : Version Control Implementation
