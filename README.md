@@ -24,7 +24,7 @@ You are tasked with developing a robust and automated application for ACEest_Fit
 
 ## Problem statement deliverables:
 #### Goal : Build a Flask web app for ACEest-Fitness
-#### Step 1: 
+### Step 1: 
     > Use the code provided in ACEest-Fitness.py (in Main Branch)
     > Add a Flask structure to it and save it as app.py, example given below (in Master Branch)
     > Create a .txt file named requirements.txt
@@ -63,3 +63,10 @@ try:
 if __name__ == '__main__':
    app.run(debug=True)
 ```
+Run the Flask Application:
+```bash
+python app.py
+```
+By default, Flask runs on http://localhost:5000. Open this URL in your browser to access the application.
+
+
