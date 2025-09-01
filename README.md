@@ -18,7 +18,7 @@ You are tasked with developing a robust and automated application for ACEest_Fit
 #### Steps: 
     > Use the code provided in ACEest-Fitness.py (in Main Branch)
     > Add a Flask structure to it and save it as app.py (in Master Branch)
-'''python
+```python
 from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
@@ -46,4 +46,4 @@ try:
 
 if __name__ == '__main__':
    app.run(debug=True)
-'''
+```
