@@ -14,13 +14,13 @@ You are tasked with developing a robust and automated application for ACEest_Fit
 6.	CI/CD Pipeline with GitHub Actions
 
 ## Tools Used:
-   > Flask 2.3.2
-   > Python 3.13
-   > Docker Engine 28.3.3
-   > Nginx 1.29.1
-   > Git 2.51.0
-   > GitHub Desktop
-   > Visual Studio code 1.103.2
+     > Flask 2.3.2
+     > Python 3.13
+     > Docker Engine 28.3.3
+     > Nginx 1.29.1
+     > Git 2.51.0
+     > GitHub Desktop
+     > Visual Studio code 1.103.2
 
 ## Problem statement deliverables:
 #### Goal : Build a Flask web app for ACEest-Fitness
