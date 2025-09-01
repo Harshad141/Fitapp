@@ -27,7 +27,11 @@ You are tasked with developing a robust and automated application for ACEest_Fit
 #### Step 1: 
     > Use the code provided in ACEest-Fitness.py (in Main Branch)
     > Add a Flask structure to it and save it as app.py, example given below (in Master Branch)
-    > 
+    > Create a .txt file named requirements.txt
+    Install Dependencies :
+  ```python
+  pip install -r requirements.txt
+  ```
 ```python
 from flask import Flask, render_template, request, redirect, url_for
 
