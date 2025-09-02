@@ -3,6 +3,10 @@
 
 name: Python application
 
+  run: |
+    pip install flake8
+    flake8 . --exclude=venv
+
 on:
   push:
     branches: [ "main" ]
