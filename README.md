@@ -34,9 +34,9 @@ ________________________________________________________________________________
 ## Important Notes:
 There are two branches in this repository
 ####
-     > Main
-     > Master
-All the codes including below are avalible in the **Master** Branch
+     > [Main](https://github.com/Harshad141/Fitapp/tree/main)
+     > [Master](https://github.com/Harshad141/Fitapp/tree/master)
+All the codes including below are avalible in the [**Master**](https://github.com/Harshad141/Fitapp/tree/master) Branch
 ####
       The Flask web application files (.py, requirements.txt, etc.)  == app.py
       Pytest unit test filesn                                        == test_app.py
@@ -44,7 +44,7 @@ All the codes including below are avalible in the **Master** Branch
       GitHub Actions workflow file                                   == .github
 
 
-The **Main** Branch consists of Given Example code, along with Readme.md and other misc files
+The [**Main**](https://github.com/Harshad141/Fitapp/tree/main) Branch consists of Given Example code, along with Readme.md and other misc files
 
   ⚠️ IMPORTANT: 
   ####
