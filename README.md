@@ -34,8 +34,8 @@ ________________________________________________________________________________
 ## Important Notes:
 There are two branches in this repository
 ####
-     > [Main](https://github.com/Harshad141/Fitapp/tree/main)
-     > [Master](https://github.com/Harshad141/Fitapp/tree/master)
+     > [Main]
+     > [Master]
 All the codes including below are avalible in the [**Master**](https://github.com/Harshad141/Fitapp/tree/master) Branch
 ####
       The Flask web application files (.py, requirements.txt, etc.)  == app.py
