@@ -33,8 +33,15 @@ There are two branches in this repository
 ####
      > Main
      > Master
-All the codes are avalible and properly uploaded to the Master Branch
-The Main Branch consists of Given Example code, along with Readme.md and ither misc files
+All the codes including below are avalible and properly uploaded to the **Master** Branch
+####
+      The Flask web application files (.py, requirements.txt, etc.). == app.py
+      Pytest unit test files. == app_test.py
+      Dockerfile for containerization. == DockerFile
+      GitHub Actions workflow file == .github
+
+
+The *Main* Branch consists of Given Example code, along with Readme.md and other misc files
 
   ⚠️ IMPORTANT: 
   ####
