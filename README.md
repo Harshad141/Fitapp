@@ -6,6 +6,7 @@
 *ID*: **2024ht66510**
 
 *Email*: **2024ht66510@wilp.bits-pilani.ac.in**
+__________________________________________________________________________________________________________________
 
 ## Assignment Objective 
 This assignment aims to provide students with hands-on experience in fundamental DevOps practices. By completing this assignment, students will gain proficiency in version control with Git and GitHub, containerization using Docker, and implementing continuous integration and continuous delivery (CI/CD) pipelines with GitHub Actions. 
@@ -18,6 +19,7 @@ You are tasked with developing a robust and automated application for ACEest_Fit
 4.	Automated Testing Configuration
 5.	Containerization with Docker
 6.	CI/CD Pipeline with GitHub Actions
+__________________________________________________________________________________________________________________
 
 ## Tools Used:
      > Flask 2.3.2
@@ -27,6 +29,7 @@ You are tasked with developing a robust and automated application for ACEest_Fit
      > Git 2.51.0
      > GitHub Desktop
      > Visual Studio code 1.103.2
+__________________________________________________________________________________________________________________
 
 ## Important Notes:
 There are two branches in this repository
@@ -47,9 +50,9 @@ The **Main** Branch consists of Given Example code, along with Readme.md and oth
   ####
         > Workflow for Python App has been tested in Master Branch.
 Navigate to : [.github/workflows/mail.yml](https://github.com/Harshad141/Fitapp/tree/master/.github/workflows)
+__________________________________________________________________________________________________________________
 
 ## Problem statement deliverables:
-__________________________________________________________________________________________________________________
 ## Step 1: 
 #### Goal : Build a Flask web app for ACEest-Fitness
     > Use the code provided in ACEest-Fitness.py (in Main Branch)
