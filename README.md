@@ -84,8 +84,8 @@ python app.py
 By default, Flask runs on http://localhost:5000. Open this URL in your browser to access the application.
 ####Output:
 ![Output](flaskapp.png)
-
-### Step 2: 
+__________________________________________________________________________________________________________________
+## Step 2: 
 #### Goal : Version Control Implementation
 Use the below steps to push the file to a remote Github Repository
 ```python
@@ -95,8 +95,8 @@ Use the below steps to push the file to a remote Github Repository
 4 git remote add origin htttps://github.com/harshad141/fitapp.git
 5 git push -u origin master
 ```
-
-### Step 3:
+__________________________________________________________________________________________________________________
+## Step 3:
 #### Goal: Unit Testing Framework Integration
 
 To validate the functionality of the Flask application we use Pytest, use the below code with 4 test cases.
@@ -144,8 +144,8 @@ def test_add_workout_non_numeric_duration_returns_400(client):
     assert resp.status_code == 400
     assert b"Duration must be a number." in resp.data
 ```
-
-### Step 4:
+__________________________________________________________________________________________________________________
+## Step 4:
 #### Goal: Automated Testing Configuration
 To run successful script, open the project directory in your local VS Code Editor and run this code
 Open terminal and use :
@@ -156,8 +156,8 @@ Confirm all tests pass locally before CI setup.
 
 Output:
 ![](pytest.png)
-
-### Step 5:
+__________________________________________________________________________________________________________________
+## Step 5:
 #### Goal: Containerization with Docker
 The goal here is to package the application for a containerised deployment.
 Steps are given below:
@@ -191,8 +191,8 @@ docker build -t aceest_fitness .
 docker run -p 5000:5050 aceest_fitness
 ```
    > The appliation will be live on http://127.0.0.1:5050
-
-### Step 6
+__________________________________________________________________________________________________________________
+## Step 6
 #### Goal: CI/CD Pipeline with GitHub Actions
 Follow the below steps
 
