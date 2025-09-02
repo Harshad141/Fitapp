@@ -196,7 +196,7 @@ docker run -p 5000:5000 aceest_fitness
 docker build -t aceest_fitness .
 docker run -p 5000:5050 aceest_fitness
 ```
-   > The appliation will be live on http://127.0.0.1:5050
+    > The appliation will be live on http://127.0.0.1:5050
 __________________________________________________________________________________________________________________
 ## Step 6
 #### Goal: CI/CD Pipeline with GitHub Actions
