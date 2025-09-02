@@ -30,8 +30,9 @@ There are two branches in this repository
 All the codes are avalible and properly uploaded to the Master Branch
 The Main Branch consists of Given Example code, along with Readme.md and ither misc files
 
- > [! IMPORTANT] Workflow for Python App has been tested in Master Branch.
-                Navigate to : [.github/workflows/mail.yml](https://github.com/Harshad141/Fitapp/tree/master/.github/workflows)
+  ⚠️ IMPORTANT: 
+        > Workflow for Python App has been tested in Master Branch.
+        > Navigate to : [.github/workflows/mail.yml](https://github.com/Harshad141/Fitapp/tree/master/.github/workflows)
 
 ## Problem statement deliverables:
 
@@ -233,18 +234,17 @@ jobs:
 
 ✅ All checks passed
 
-
 ❌ Some checks failed
+
 
 5. Workflow Run Status
    
 Success (✔️): All jobs and steps completed without errors.
 
-
 Failure (❌): One or more steps failed.
 
-
 Cancelled (🚫): The workflow was manually stopped.
+
 
 This can be seen in the Actions tab of the repository.
 
