@@ -29,8 +29,9 @@ There are two branches in this repository
      > Master
 All the codes are avalible and properly uploaded to the Master Branch
 The Main Branch consists of Given Example code, along with Readme.md and ither misc files
- **Important!** Workflow for Python App has been tested in Master Branch.
-                Navigate to : [.github/workflows/mail.yml] [https://github.com/Harshad141/Fitapp/tree/master/.github/workflows]
+
+ > [! IMPORTANT] Workflow for Python App has been tested in Master Branch.
+                Navigate to : [.github/workflows/mail.yml](https://github.com/Harshad141/Fitapp/tree/master/.github/workflows)
 
 ## Problem statement deliverables:
 
