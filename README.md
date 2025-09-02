@@ -33,11 +33,11 @@ The Main Branch consists of Given Example code, along with Readme.md and ither m
   ⚠️ IMPORTANT: 
   ####
         > Workflow for Python App has been tested in Master Branch.
-        > Navigate to : [.github/workflows/mail.yml](https://github.com/Harshad141/Fitapp/tree/master/.github/workflows)
+Navigate to : [.github/workflows/mail.yml](https://github.com/Harshad141/Fitapp/tree/master/.github/workflows)
 
 ## Problem statement deliverables:
-
-### Step 1: 
+__________________________________________________________________________________________________________________
+## Step 1: 
 #### Goal : Build a Flask web app for ACEest-Fitness
     > Use the code provided in ACEest-Fitness.py (in Main Branch)
     > Add a Flask structure to it and save it as app.py, example given below (in Master Branch)
