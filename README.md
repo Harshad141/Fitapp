@@ -33,10 +33,10 @@ There are two branches in this repository
 ####
      > Main
      > Master
-All the codes including below are avalible and properly uploaded to the **Master** Branch
+All the codes including below are avalible in the **Master** Branch
 ####
       The Flask web application files (.py, requirements.txt, etc.)  == app.py
-      Pytest unit test filesn                                        == app_test.py
+      Pytest unit test filesn                                        == test_app.py
       Dockerfile for containerization                                == DockerFile
       GitHub Actions workflow file                                   == .github
 
