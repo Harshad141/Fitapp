@@ -234,3 +234,11 @@ jobs:
 ✅ All checks passed
 ❌ Some checks failed
 
+5. Workflow Run Status
+   
+Success (✔️): All jobs and steps completed without errors.
+Failure (❌): One or more steps failed.
+Cancelled (🚫): The workflow was manually stopped.
+
+This can be seen in the Actions tab of the repository.
+
