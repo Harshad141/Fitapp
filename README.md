@@ -192,8 +192,11 @@ docker run -p 5000:5050 aceest_fitness
 
 ### Step 6
 #### Goal: CI/CD Pipeline with GitHub Actions
-
 Follow the below steps
+
+1. Master Branch, add a file in .github/workflows/mail.yml
+2. Add the Follwoing code in Mail.yml File
+
 ```python
 name: Python Tests
 
