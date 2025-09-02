@@ -194,5 +194,40 @@ docker run -p 5000:5050 aceest_fitness
 #### Goal: CI/CD Pipeline with GitHub Actions
 
 Follow the below steps
+```python
+name: Python Tests
 
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: |
+          pytest
+```
+4. If your workflow is triggered by a pull request, GitHub will show a status check on the PR:
+
+✅ All checks passed
+❌ Some checks failed
 
