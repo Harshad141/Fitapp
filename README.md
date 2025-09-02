@@ -1,7 +1,11 @@
-# Introduction to DevOps 
-(Merged - CSIZG514/SEZG514) (S1-25)
+## Introduction to DevOps 
+       (Merged - CSIZG514/SEZG514) (S1-25)
+       
+*Name*: **Harshad Dhane**
+*ID*: **2024ht66510**
+*Email*: **2024ht66510@wilp.bits-pilani.ac.in**
 
-## Objective 
+## Assignment Objective 
 This assignment aims to provide students with hands-on experience in fundamental DevOps practices. By completing this assignment, students will gain proficiency in version control with Git and GitHub, containerization using Docker, and implementing continuous integration and continuous delivery (CI/CD) pipelines with GitHub Actions. 
 
 ## Problem statement
