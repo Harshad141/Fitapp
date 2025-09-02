@@ -189,6 +189,7 @@ docker build -t aceest_fitness .
 docker run -p 5000:5000 aceest_fitness
 ```
 4. Run the contianrised application
+   
    The application will be live on http://127.0.0.1:5000
  > If it throws an port error, try different port after editing the above script
 ```python
